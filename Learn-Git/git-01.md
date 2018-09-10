@@ -15,7 +15,7 @@ git commit表示将git add增加的本地修改和变动，提交到版本区。
 
 ### 4.git status
 git status可以查看当前git管理的状态。
-如果当前工作区是干净的，没有可提交的修改变动，则git status会提示：nothing to commit, working tree clean
-如果当前工作区有了变动，但还没有进行git add操作，则git status会红色提示相应修改的文件
-如果当前工作区的修改文件已经进行了git add提交，则git status会绿色文字提醒相应的提交文件
+a.如果当前工作区是干净的，没有可提交的修改变动，则git status会提示：nothing to commit, working tree clean
+b.如果当前工作区有了变动，但还没有进行git add操作，则git status会红色提示相应修改的文件
+c.如果当前工作区的修改文件已经进行了git add提交，则git status会绿色文字提醒相应的提交文件
 git status还有一个简略版的状态说明: git status -s。这个命令会显示简略版的git当前状态说明，免得看一大堆英文说明。但是需要对简略的状态说明规则需要有一定了解。
