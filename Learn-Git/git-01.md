@@ -31,3 +31,25 @@ git diff命令可以对比本地的工作区和暂存区文件的差异。如果
 
 ### 8.git branch my-branch-01
 创建一个叫做my-branch-01的分支
+
+### 9.git checkout my-branch-01
+切换到my-branch-01分支上
+
+### 10.git merge my-branch-01
+将my-branch-01与当前的分支进行合并
+
+### 11.git merge --abort
+取消两个分支的合并。在两个分支存在冲突，并且合并失败的情况下，可以使用这个命令进行合并操作的撤销。
+
+### 12.git reset HEAD a.txt
+取消a.txt文件在暂存区的提交
+
+### 13.git commit -m 'some new words' --amend
+这次的提交的说明信息，会覆盖上一次commit提交的说明信息。运用这条命令可进行commit提交信息的修改，但是要注意的是只能修改上一次提交的信息。
+
+### 14.git reset "HEAD^"
+撤销上一次的commit提交，这条信息还有一个类似的用法，可以指定撤销之前N次的commit提交：
+git reset HEAD~N
+
+### 15.git reset hash
+可以撤销本次hash值所代表的commit提交，需要知道当次commit提交的hash值。
